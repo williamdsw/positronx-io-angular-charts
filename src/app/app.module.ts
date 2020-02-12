@@ -8,6 +8,7 @@ import { LineChartModule } from './line-chart/line-chart.module';
 import { DoughnutChartModule } from './doughnut-chart/doughnut-chart.module';
 import { RadarChartModule } from './radar-chart/radar-chart.module';
 import { PieChartModule } from './pie-chart/pie-chart.module';
+import { BubbleChartModule } from './bubble-chart/bubble-chart.module';
 
 import { AppComponent } from './app.component';
 
@@ -23,7 +24,8 @@ import { AppComponent } from './app.component';
     LineChartModule,
     DoughnutChartModule,
     RadarChartModule,
-    PieChartModule
+    PieChartModule,
+    BubbleChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
