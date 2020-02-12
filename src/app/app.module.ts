@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BarChartModule } from './bar-chart/bar-chart.module';
 import { LineChartModule } from './line-chart/line-chart.module';
 import { DoughnutChartModule } from './doughnut-chart/doughnut-chart.module';
+import { RadarChartModule } from './radar-chart/radar-chart.module';
 
 import { AppComponent } from './app.component';
 
@@ -19,7 +20,8 @@ import { AppComponent } from './app.component';
     ChartsModule,
     BarChartModule,
     LineChartModule,
-    DoughnutChartModule
+    DoughnutChartModule,
+    RadarChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
