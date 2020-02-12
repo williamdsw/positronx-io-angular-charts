@@ -25,7 +25,7 @@ import { AppComponent } from './app.component';
     DoughnutChartModule,
     RadarChartModule,
     PieChartModule,
-    BubbleChartModule
+    BubbleChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

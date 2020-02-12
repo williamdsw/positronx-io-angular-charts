@@ -15,7 +15,7 @@ const ROUTES: Routes = [
   { path: 'radar-chart', component: RadarChartComponent },
   { path: 'pie-chart', component: PieChartComponent },
   { path: 'bubble-chart', component: BubbleChartComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'bubble-chart' }
+  { path: '', pathMatch: 'full', redirectTo: 'bar-chart' }
 ];
 
 @NgModule({
