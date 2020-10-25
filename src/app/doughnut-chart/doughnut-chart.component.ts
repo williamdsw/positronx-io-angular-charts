@@ -4,26 +4,26 @@ import { MultiDataSet, Label } from 'ng2-charts';
 
 @Component({
   selector: 'app-doughnut-chart',
-  templateUrl: './doughnut-chart.component.html',
-  styleUrls: ['./doughnut-chart.component.css']
+  templateUrl: './doughnut-chart.component.html'
 })
 export class DoughnutChartComponent implements OnInit {
 
   // FIELDS
 
-  doughnugChartLabels: Label[] = ['PS4', 'Xbox One', 'PC', 'Nintendo Switch'];
-  doughnugChartData: MultiDataSet = [
-    [30, 29, 19, 40]
+  public doughnugChartLabels: Label[] = [
+    'PS4', 'Xbox One', 'PC', 'Nintendo Switch',
   ];
-  doughnugChartType: ChartType = 'doughnut';
+  public doughnugChartData: MultiDataSet = [
+    [30, 29, 19, 40],
+  ];
+  public doughnugChartType: ChartType = 'doughnut';
 
   // CONSTRUCTOR
 
   constructor() { }
 
-  // LIFE CYCLE HOOKS 
+  // LIFE CYCLE HOOKS
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
