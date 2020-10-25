@@ -4,8 +4,7 @@ import { Color } from 'ng2-charts';
 
 @Component({
   selector: 'app-bubble-chart',
-  templateUrl: './bubble-chart.component.html',
-  styleUrls: ['./bubble-chart.component.css']
+  templateUrl: './bubble-chart.component.html'
 })
 export class BubbleChartComponent implements OnInit {
 
@@ -26,7 +25,7 @@ export class BubbleChartComponent implements OnInit {
   public bubbleChartOptions: ChartOptions = {
     responsive: true,
     scales: {
-      xAxes: [{ ticks: { min: 0, max: 50 } }],
+      xAxes: [{ ticks: { min: 0, max: 50 }}],
       yAxes: [{ ticks: { min: 0, max: 50 }}]
     }
   }
@@ -34,15 +33,14 @@ export class BubbleChartComponent implements OnInit {
   public bubbleChartColors: Color[] = [];
 
   public bubbleChartType: ChartType = 'bubble';
-  public bubbleChartLegend: boolean = true;
+  public bubbleChartLegend = true;
 
   // CONSTRUCTOR
 
   constructor() {}
 
-  // LIFE CYCLE HOOKS 
+  // LIFE CYCLE HOOKS
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
