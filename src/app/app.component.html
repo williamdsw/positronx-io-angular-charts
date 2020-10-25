@@ -4,12 +4,16 @@
     <h3 clas="navbar-brand"> Charts </h3>
 
     <!-- menu toggler -->
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="navbarNavAltMarkup" aria-expanded="true" aria-label="Alterna navegação">
+    <button type="button" class="navbar-toggler" 
+            data-toggle="collapse" data-target="navbarNavAltMarkup" 
+            aria-expanded="true" aria-label="Toggle Navigation" 
+            [attr.aria-expanded]="!isCollapsed"
+            (click)="isCollapsed = !isCollapsed">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- links -->
-    <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
+    <div id="navbarNavAltMarkup" class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
         <div class="navbar-nav">
             <a class="nav-item nav-link" routerLink="/bar-chart" routerLinkActive="active"> Bar </a>
             <a class="nav-item nav-link" routerLink="/bubble-chart" routerLinkActive="active"> Bubble </a>
@@ -21,5 +25,6 @@
     </div>
 </nav>
 
-
-<router-outlet></router-outlet>
+<main>
+    <router-outlet></router-outlet>
+</main>

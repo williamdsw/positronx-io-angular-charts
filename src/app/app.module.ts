@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ChartsModule } from 'ng2-charts';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { SharedModule } from './shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BarChartModule } from './bar-chart/bar-chart.module';
@@ -26,6 +29,8 @@ import { AppComponent } from './app.component';
     RadarChartModule,
     PieChartModule,
     BubbleChartModule,
+    NgbModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

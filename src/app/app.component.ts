@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'positronx-io-angular-charts';
+  public title = 'positronx-io-angular-charts';
+  public isCollapsed = true;
 }
