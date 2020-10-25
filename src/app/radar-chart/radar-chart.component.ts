@@ -5,14 +5,17 @@ import { Label } from 'ng2-charts';
 @Component({
   selector: 'app-radar-chart',
   templateUrl: './radar-chart.component.html',
-  styleUrls: ['./radar-chart.component.css']
 })
 export class RadarChartComponent implements OnInit {
 
   // FIELDS
 
-  public radarChartLabels: Label[] = ['Shoot', 'Sprint', 'Stamina', 'Cross', 'Pass', 'Strength', 'Header'];
-  public radarChartData: ChartDataSets[] = [ { data: [5, 4, 3.5, 2, 3.5, 4.5, 6], label: 'Skills' } ];
+  public radarChartLabels: Label[] = [
+    'Shoot', 'Sprint', 'Stamina', 'Cross', 'Pass', 'Strength', 'Header'
+  ];
+  public radarChartData: ChartDataSets[] = [
+    { data: [5, 4, 3.5, 2, 3.5, 4.5, 6], label: 'Skills' }
+  ];
   public radarChartType: ChartType = 'radar';
   public radarChartOptions: RadialChartOptions = {
     responsive: true,
@@ -22,9 +25,8 @@ export class RadarChartComponent implements OnInit {
 
   constructor() { }
 
-  // LIFE CYCLE HOOKS 
+  // LIFE CYCLE HOOKS
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
