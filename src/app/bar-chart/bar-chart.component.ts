@@ -4,34 +4,32 @@ import { Label } from 'ng2-charts';
 
 @Component({
   selector: 'app-bar-chart',
-  templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.css']
+  templateUrl: './bar-chart.component.html'
 })
 export class BarChartComponent implements OnInit {
 
   // FIELDS
 
-  barChartOptions: ChartOptions = {
-    responsive: true,
-    showLines: true
-  };
+  public barChartOptions: ChartOptions = { responsive: true, showLines: true };
 
-  barChartLabels: Label[] = ['Manchester United', 'Chelsea', 'Tottenham', 'Arsenal', 'Liverpool', 'Everton', 'Manchester City', 'Leicester City'];
-  barChartType: ChartType = 'bar';
-  barChartLegend: boolean = true;
-  barChartPlugins: [];
+  public barChartLabels: Label[] = [
+    'Manchester United', 'Chelsea', 'Tottenham', 'Arsenal', 'Liverpool',
+    'Everton', 'Manchester City', 'Leicester City'
+  ];
+  public barChartType: ChartType = 'bar';
+  public barChartLegend: true;
+  public barChartPlugins: [];
 
   barChartData: ChartDataSets[] = [
-    { data: [45, 42, 36, 39, 50, 34, 48, 40], label: 'Best Clubs' }
+    { data: [45, 42, 36, 39, 50, 34, 48, 40], label: 'Points' }
   ];
 
   // CONSTRUCTOR
 
   constructor() { }
 
-  // LIFE CYCLE HOOKS 
+  // LIFE CYCLE HOOKS
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
