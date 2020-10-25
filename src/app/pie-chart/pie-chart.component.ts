@@ -9,8 +9,7 @@ import {
 
 @Component({
   selector: 'app-pie-chart',
-  templateUrl: './pie-chart.component.html',
-  styleUrls: ['./pie-chart.component.css']
+  templateUrl: './pie-chart.component.html'
 })
 export class PieChartComponent implements OnInit {
 
@@ -19,22 +18,19 @@ export class PieChartComponent implements OnInit {
   public pieChartsLabels: Label[] = ['Capcom', 'Konami', 'Bandai', 'Sony'];
   public pieChartData: SingleDataSet = [50, 42, 30, 48];
   public pieChartType: ChartType = 'pie';
-  public pieChartLegend: boolean = true;
-  public pieChartOptions: ChartOptions = {
-    responsive: true
-  };
+  public pieChartLegend = true;
+  public pieChartOptions: ChartOptions = { responsive: true };
   public pieChartPlugins = [];
 
   // CONSTRUCTOR
 
   constructor() {
-    monkeyPatchChartJsTooltip ();
-    monkeyPatchChartJsLegend ();
-   }
-
-  // LIFE CYCLE HOOKS 
-
-  ngOnInit() {
+    monkeyPatchChartJsTooltip();
+    monkeyPatchChartJsLegend();
   }
+
+  // LIFE CYCLE HOOKS
+
+  ngOnInit() { }
 
 }

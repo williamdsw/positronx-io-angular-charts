@@ -1,10 +1,18 @@
-<div class="chart-wrapper">
-    <canvas baseChart
-            [data]="pieChartData"
-            [labels]="pieChartsLabels"
-            [chartType]="pieChartType"
-            [options]="pieChartOptions"
-            [plugins]="pieChartPlugins"
-            [legend]="pieChartLegend">
-    </canvas>
-</div>
+<article class="p-3">
+    <header>
+        <h1 class="text-center">
+            Pie Chart
+        </h1>
+    </header>
+
+    <div class="chart-wrapper">
+        <canvas baseChart
+                [data]="pieChartData"
+                [labels]="pieChartsLabels"
+                [chartType]="pieChartType"
+                [options]="pieChartOptions"
+                [plugins]="pieChartPlugins"
+                [legend]="pieChartLegend">
+        </canvas>
+    </div>
+</article>
